@@ -38,7 +38,7 @@ body{
 header{
     display: block;
     width: 100%;
-    position: fixed;
+    position: flex;
     top: 0;
     left: 0;
     z-index: 100;
