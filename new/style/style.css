@@ -135,7 +135,7 @@ header{
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url(/Challenge2024/new/img/background.png);
+    background: url(/Challenge/new/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -354,7 +354,6 @@ header{
 .footer{
     background: var(--text-color);
     color: #f6f6f6;
-    border-top: 2px solid var(--main-color);
     position: bottom;
 }
 
