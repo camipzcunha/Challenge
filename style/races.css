@@ -1,0 +1,104 @@
+:root {
+    --main-color: #DF2727;
+    --second-color: #821919;
+    --text-color: #314862;
+    --bg-color:#fff;
+    --box-shadow:2px 2px 8px rgb(14 52 54 / 15%);
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.calendario{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.corridas{
+    margin: 4rem;
+    width: 50rem;
+    height: 40rem;
+    border: 2px solid var(--main-color);
+    border-radius: 2rem;
+    background-color: rgba(236, 141, 141, 0.438);
+    display: block;
+    flex-direction: row;
+    padding: 3rem;
+    width: 100%;
+}
+.corrida{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow:inherit
+}
+.corrida .pista{
+    display: none;
+}
+.pista.mostraCorrida{
+    display:block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.home{
+    display: flex;
+}
+
+
+
+.botao {
+  background: #e62143;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 1.15em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10%;
+  word-break: break-word;
+  border: 0;
+}
+
+.botao:active,
+.botao:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+  outline: 0;
+}
+
+.botao:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
