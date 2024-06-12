@@ -6,7 +6,7 @@ window.onload=comecaCalendario()
 function comecaCalendario(){
     if(corridas.length >= 0){
         corridas[indexCorrida].classList.add("mostraCorrida")
-        intervaloTempo = setInterval(proxCorrida, 5000)
+        intervaloTempo = setInterval(proxCorrida, 40000)
     }
 }
 function apresentaCorrida(index){
