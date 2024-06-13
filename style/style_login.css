@@ -185,13 +185,13 @@ header .heading .logo {
 
 
 .overlay .page h3 {
-    color: #fff;
+    color: #DF2727;
     font-size: 20px;
     margin-bottom: 15px;
 }
 
 .overlay .page p {
-    color: #fff;
+    color: #222;
     font-weight: 600;
     margin-bottom: 20px;
     font-size: 17px;
@@ -200,14 +200,14 @@ header .heading .logo {
 .btn {
     display: inline-block;
     outline: none;
-    color: #fff;
+    color: #222;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 550;
     background-color: transparent;
     padding: 12px 45px;
     border-radius: 22px;
-    border: 1.5px solid #fff;
+    border: 1.5px solid #DF2727;
     cursor: pointer;
 }
 
@@ -257,13 +257,5 @@ header .heading .logo {
 #form_input .forgot {
     margin-bottom: 20px;
     font-weight: 500;
-}
-
-.bkg {
-    background-color: #DF2727;
-}
-
-.bkg:hover {
-    background-color: #EE3E3E;
 }
 

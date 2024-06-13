@@ -1,3 +1,4 @@
+// BARRA DE PESQUISA
 
 let search = document.querySelector('.search-box');
 
@@ -11,7 +12,7 @@ window.addEventListener('scroll', () => {
     header.classList.toggle('shadow', window.scrollY >0 );
 })
 
-// script.js
+// RANKING
 const users = [
     { name: 'Pedro Campos', eCoins: 150, quizzes: 10, cards: 5 },
     { name: 'Fernanda Rod.', eCoins: 200, quizzes: 15, cards: 10 },
@@ -44,3 +45,21 @@ function renderRanking() {
 }
 
 document.addEventListener('DOMContentLoaded', renderRanking);
+
+
+// CARROSSEL
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+
+let i = 0;
+
+function carrossel(){
+    i++;
+    if(i > img.length - 1){
+        i = 0;
+    }
+
+    imgs.style.transform = `translateX(${-i*355}px)`
+}
+
+setInterval(carrossel, 1800);
