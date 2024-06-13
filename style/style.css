@@ -54,6 +54,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
+    max-width: 85%
 }
 
 #menu-icon{
@@ -135,7 +136,7 @@ header{
     min-height: 640px;
     display: flex;
     align-items: center;
-    background: url(/Challenge/img/background.png);
+    background: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
@@ -190,6 +191,7 @@ section.cars{
 .cars .heading{
     color: var(--bg-color);
     text-align: center;
+    margin-top: 0px;
 }
 
 .cars .heading span{
@@ -386,7 +388,7 @@ td i {
 }
 
 section.quizzes{
-    background: url(/Challenge/img/fundo.png);
+    background: url(../img/fundo.png);
     padding: 1rem 0;
     background-repeat: no-repeat;
 }
@@ -455,20 +457,37 @@ section.quizzes{
     align-items: center;
     gap: 1.5rem;
     margin-top: 4rem;
-    background: url(/Challenge/img/imagem_fundo.png);
+    background: url(../img/imagem_fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 40rem;
 }
 
-.fe-guide-img{
-    flex: 1 1 2rem;
-    margin-left: 2rem;
+.fe-guide .carrossel{
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 300px;
+    width: 350px;
+    margin: 0 50px 0 100px;
+}
+
+.fe-guide .container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.fe-guide .container img{
+    object-fit: cover;
+    min-height: 300px;
+    min-width: 355px;
 }
 
 .fe-guide-text{
     flex: 1 1 21rem;
     color: var(--bg-color);
+    margin: 0 130px 0 0;
+    text-align: justify;
 }
 
 .fe-guide-text span{
