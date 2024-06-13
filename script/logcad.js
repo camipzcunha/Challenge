@@ -18,10 +18,10 @@ function login() {
     if (email === "user@example.com" && senha === "senha123") {
         alert("Seja Bem-vindo(a) a nossa plataforma!")
         // Redireciona para a página principal após login bem-sucedido
-        window.location.href = '../index.html';
+        window.location.href = 'Challenge/perfil.html'
     } else 
     {
-        alert("Email ou senha incorretos");
+        alert("Email ou senha incorretos")
     }
 }
 
@@ -34,7 +34,7 @@ function cadastrarSe(){
     if(nomeCadastro != '' && emailCadastro != '' && senha1 != '' && senha2 != '')
     {
         alert("Cadastro realizado com sucesso!")
-        window.location.href = '../index.html';
+        window.location.href = '../perfil.html'
     }
     else
     {
