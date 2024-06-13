@@ -46,7 +46,6 @@ function renderRanking() {
 
 document.addEventListener('DOMContentLoaded', renderRanking);
 
-
 // CARROSSEL
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
