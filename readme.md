@@ -23,9 +23,17 @@ Pedro Almeida Camacho | RM 556831
 
 	Em nossa plataforma, as crianças e os jovens podem acessar conteúdo educativo e atividades relacionadas à Fórmula-E, como sobre os pilotos, equipes, carros, corridas e circuitos. Porém o elemento principal da nossa solução é um álbum de figurinhas virtual, onde as crianças podem colecionar e trocar figurinhas dos pilotos e carros da Fórmula-E com seus amigos. Além disso, há também quizzes e outras atividades interativas relacionadas à Fórmula-E para entreter e educar as crianças. 
 
-
 ## Especificações técnicas
 #### Alerts
+    Página de login e cadastro (logcad.html)
+
 #### Prompts
-#### Carrossel
+    Página do perfil (perfil.html)
+
+#### Slide Show
+    Página inicial (index.html)
+    Página do perfil (perfil.html)
+    Página do guia (guide.html)
+
 #### Outros
+    Opção de editar perfil (perfil.html)
