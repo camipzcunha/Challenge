@@ -18,7 +18,7 @@ function login() {
     if (email === "user@example.com" && senha === "senha123") {
         alert("Seja Bem-vindo(a) a nossa plataforma!")
         // Redireciona para a página principal após login bem-sucedido
-        window.location.href = 'Challenge/perfil.html'
+        window.location.href = '../perfil.html'
     } else 
     {
         alert("Email ou senha incorretos")

@@ -151,7 +151,7 @@ header .heading .logo {
     width: 50%;
     transition: all 0.8s;
     transform: translateX(0);
-    background-image: url('/Challenge/img/img_login.gif');
+    background-image: url('../img/img_login.gif');
     z-index: 1;
     overflow: hidden;
     z-index: 5;
