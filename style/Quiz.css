@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:visited{
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: #eee;
+    font-family: Poppins;
+    font-size: 12px; 
+    
+}
+
+.menu-quiz{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #ff0000, #8b0000);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.menu-quiz .list .item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.menu-quiz .list .item .conteudo{
+    width: 30%;
+    margin: 5rem;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.menu-quiz .list .item .autor{
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-size: 2em; 
+}
+
+.menu-quiz .list .item .titulo,
+.menu-quiz .list .item .tema{
+    font-size: 8em; 
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.menu-quiz .list .item .tema{
+    color: #5a0707;
+}
+
+.menu-quiz .list .item .descricao {
+    font-size: 2em; 
+}
+
+.menu-quiz .list .item .botoes{
+    display: grid;
+    grid-template-columns: 130px;
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.menu-quiz .list .item .botoes button{
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 1.5em; 
+    border-radius: 20px; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); 
+}
+.menu-quiz .list .item .botoes button:hover {
+    background-color: #2c0404;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15); 
+}
+
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.menu-quiz .list .item:nth-child(1) .conteudo .autor,
+.menu-quiz .list .item:nth-child(1) .conteudo .titulo,
+.menu-quiz .list .item:nth-child(1) .conteudo .tema,
+.menu-quiz .list .item:nth-child(1) .conteudo .descricao,
+.menu-quiz .list .item:nth-child(1) .conteudo .botoes {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+
+.menu-quiz .list .item:nth-child(1) .conteudo .titulo {
+    animation-delay: 1.2s!important;
+}
+
+.menu-quiz .list .item:nth-child(1) .conteudo .tema {
+    animation-delay: 1.4s!important;
+}
+
+.menu-quiz .list .item:nth-child(1) .conteudo .descricao {
+    animation-delay: 1.6s!important;
+}
+
+.menu-quiz .list .item:nth-child(1) .conteudo .botoes {
+    animation-delay: 1.8s!important;
+}
+
+@media screen and (max-width: 678px) {
+    .menu-quiz .list .item .conteudo{
+        padding-right: 0;
+    }
+    .menu-quiz .list .item .conteudo .titulo{
+        font-size: 60px; /* Aumentado */
+    }
+}
+
+/* CSS do container */
+.container {
+    width: auto; 
+    display: flex;
+    height: 500px;
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 10% 8% 0 0;
+    font-family: "Ubuntu Mono", monospace;
+  }
+  .container > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+  }
+  .container > div:nth-of-type(1) {
+    background: url("https://images.squarespace-cdn.com/content/v1/62684bb0004eac432535d7d7/990dc2d8-b891-4cb2-b0bd-bc94417870fb/giphy+%289%29.gif") no-repeat 50%/cover;
+  }
+  .container > div:nth-of-type(2) {
+    background: url("https://i.pinimg.com/originals/ce/fb/a9/cefba952b13b912594f7b8b944bf62e6.gif") no-repeat 50%/cover;
+  }
+  .container > div:nth-of-type(3) {
+    background: url("https://static.wixstatic.com/media/cf42f2_8e988be2ec50411baafe092d2619e9ac~mv2.gif") no-repeat 50%/cover;
+  }
+  .container > div:nth-of-type(4) {
+    background: url("https://66.media.tumblr.com/96ffbce152aaa08188ba1a432ed25750/tumblr_of02oqcH6o1rir2g0o1_500.gif") no-repeat 50%/cover;
+  }
+  .container > div .content {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    background: #380505;
+    background: linear-gradient(0deg, rgba(2, 2, 46, 0.6755077031) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: translatey(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden;
+  }
+  .container > div .content span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+  .container > div:hover {
+    flex: 0 0 250px;
+    box-shadow: 1px 3px 15px #e00b0b;
+    transform: translatey(-30px);
+  }
+  .container > div:hover .content {
+    opacity: 1;
+    transform: translatey(0%);
+    visibility: visible;
+  }
+  
